@@ -3,6 +3,12 @@
 
 Creates a weather object getting an apikey as input and either a city name or lat and lon coordinates.
 
+    install pakake using
+    >>> pip install sunnyday-YG
+
+    import pakake using
+    >>> from sunnyday_YG.sunnyday import Weather
+
     Package use example:
 
     # Create a weather object using a city name:
