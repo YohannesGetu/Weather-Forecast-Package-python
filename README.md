@@ -26,4 +26,7 @@ Creates a weather object getting an apikey as input and either a city name or la
 
     # Simplified data for the next 12 hours:
     >>> weather1.next_12h_simplified()
+    
+    Sample url to get sky condition icons:
+    https://openweathermap.org/img/wn/10d@2x.png
  

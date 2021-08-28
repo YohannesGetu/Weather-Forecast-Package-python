@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='sunnyday_YG',
     packages=['sunnyday_YG'],
-    version='1.0.0',
+    version='2.0.0',
     license='MIT',
     description='Weather forecast data',
     author='Yohannes Getu',
@@ -14,7 +14,7 @@ setup(
         'requests',
     ],
     classifires=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
