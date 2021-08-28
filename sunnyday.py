@@ -1,5 +1,4 @@
 import pprint
-
 import requests
 
 
@@ -63,9 +62,11 @@ class Weather:
         return simple_data
 
 
-weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92", city="Addis kAbaba")
-pprint.pprint(weather.next_12h_simplified())
-# weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92", lat="40.1", lon="3.4")
-# pprint.pprint(weather.next_12h())
-# weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92")
-# pprint.pprint(weather.next_12h())
+if __name__ == "__main__":
+    weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92", city="Addis kAbaba")
+    pprint.pprint(weather.next_12h())
+    pprint.pprint(weather.next_12h_simplified())
+    # weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92", lat="40.1", lon="3.4")
+    # pprint.pprint(weather.next_12h())
+    # weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92")
+    # pprint.pprint(weather.next_12h())
