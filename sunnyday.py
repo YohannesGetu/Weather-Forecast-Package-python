@@ -22,6 +22,8 @@ class Weather:
             self.data = r.json()
         else:
             raise TypeError("provide either a city or lat lon arguments")
+        if self.data["cod"] != "200":
+            raise ValueError(self.data["message"])
 
     def next_12h(self):
         return self.data['list'][:4]
@@ -35,7 +37,7 @@ class Weather:
         return simple_data
 
 
-weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92", city="Addis Ababa")
+weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92", city="Addis kAbaba")
 pprint.pprint(weather.next_12h_simplified())
 # weather = Weather(apikey="26631f0f41b95fb9f5ac0df9a8f43c92", lat="40.1", lon="3.4")
 # pprint.pprint(weather.next_12h())
